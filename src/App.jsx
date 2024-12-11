@@ -11,11 +11,11 @@ function App() {
     return arr.map((cur, index) => {
       let state 
       if (cur.state === "completed"){
-        state = "status-comp"
+        state = "comp"
       } else if (cur.state === "in_progress"){
-        state = "status-progress"
+        state = "progress"
       } else if (cur.state === "backlog"){
-        state = "status-backlog"
+        state = "backlog"
       }
       return (
         <li key={index} className="listItem">
@@ -33,7 +33,7 @@ function App() {
           </div>
 
           <div className="innerCont">
-            <div className={state}>{cur.state}</div>
+            <div className={`status ${state}`}>{cur.state}</div>
           </div>
 
         </li>
@@ -45,11 +45,12 @@ function App() {
   console.log(input(inProg));
   return (
     <>
-      <h2>Task Completate</h2>
+      <h2>TASK COMPLETATE</h2>
       <ul>
         {input(completed)}
       </ul>
-      <h2>Task in Progress</h2>
+      <hr />
+      <h2>TASK IN PROGRESSO</h2>
       <ul>
         {input(inProg)}
       </ul>

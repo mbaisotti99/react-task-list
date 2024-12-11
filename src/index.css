@@ -4,8 +4,39 @@
   padding: 0;
 }
 
-.innerCont{
+hr{
+  margin: 50px 0;
+}
+
+h2{
   text-align: center;
+  margin: 30px 0;
+  font-size: 40px;
+  font-family: "Montserrat Underline";
+}
+
+.headBg{
+  box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.mainTitle{
+  font-family: "Playwrite GB J Guides";
+  font-size: 70px;
+}
+
+.innerCont{
+  margin: 10px 0;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li:nth-child(even){
+  background-color: rgba(211, 211, 211, 0.288);
 }
 
 .headBg{
@@ -23,15 +54,19 @@
   flex-wrap: nowrap;
 }
 
-.status-comp{
-  padding: 5px;
+.comp{
   background-color: greenyellow ;
 }
-.status-backlog{
-  padding: 5px;
+.backlog{
   background-color: yellow ;
 }
-.status-progress{
-  padding: 5px;
+.progress{
   background-color: red ;
+}
+
+.status{
+  padding: 8px;
+  width: fit-content;
+  border-radius: 10px;
+  box-shadow: 10px 10px 12px rgba(173, 173, 173, 0.767);
 }
