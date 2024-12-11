@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.innerCont{
+  text-align: center;
+}
+
+.headBg{
+  background-color: aquamarine;
+  width: 100%;
+  padding: 20px;
+}
+
+.listItem{
+  display: flex;
+}
+
+.innerCont{
+  width: calc(100% / 4);
+  flex-wrap: nowrap;
+}
+
+.status-comp{
+  padding: 5px;
+  background-color: greenyellow ;
+}
+.status-backlog{
+  padding: 5px;
+  background-color: yellow ;
+}
+.status-progress{
+  padding: 5px;
+  background-color: red ;
+}
